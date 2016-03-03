@@ -73,6 +73,9 @@ img{
  border:none;
 }
 
+.link {
+    color: #ffc400;
+}
 /* Preloader */
 #preloader {
   position: fixed;
@@ -122,6 +125,8 @@ img{
   text-decoration: none;
   outline: none;
 }
+
+
 
 /*--------------------*/
 /* HEADER */
@@ -558,6 +563,7 @@ div[data-dimension] {
     padding: 60px 0px;
     float: left;
     width: 100%;
+    display: inline;
 }
 
 .skills_area{
@@ -787,7 +793,7 @@ div[data-dimension] {
 	.og-close {z-index: 999;}
 	#about {padding: 50px 0;}
 	#service {padding: 50px 0 50px;}
-	#works {padding: 0 0 50px;}
+	#works {padding: 50px 0 50px;}
 	#team {padding: 50px 0;}
 	#pricing {padding: 50px 0;}
 	#blog {padding: 50px 0;}
