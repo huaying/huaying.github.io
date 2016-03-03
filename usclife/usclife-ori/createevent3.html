@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/latest/jqm-datebox.core.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.flipbox.min.js"></script>
+
+    <title>USCLife</title>
+
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-c" id="c_event3">
+         <script src="./js/make-hearder.js"></script>
+
+        <div data-role="main" class="ui-content" >
+             <div class="container">
+                <ol class="progress-meter">
+                  <li class="progress-point done">Category</li><li class="progress-point done">Info</li><li class="progress-point current">Details</li><li class="progress-point todo">Finished</li>
+                </ol>
+            </div>
+            <div class="c_event3">
+            <form method="post" action="demoform.asp">
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:60px"><strong>Open seats:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <select>
+                            <option>Less than 5</option>
+                            <option>5-10</option>
+                            <option>11-20</option>
+                            <option>21-30</option>
+                            <option>31-40</option>
+                            <option>41-50</option>
+                            <option selected="selected">100+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label><strong>Details:</strong></label>
+                <textarea></textarea>
+
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"><a href="menu.html" class="ui-shadow ui-btn" style="font-size:15px">Cancel</a></div>
+                    <div class="ui-block-b"><a href="createevent2.html" class="ui-shadow ui-btn" style="font-size:15px">Back</a></div>
+                    <div class="ui-block-c"><a href="createevent4.html" class="ui-shadow ui-btn" style="font-size:15px">Next</a></div>
+                </div>
+
+            </form>
+            </div>
+        </div>
+        <script>
+            $('#c_event3').on("pageshow",function(){
+                console.log(123);
+                setTimeout(function(){
+                    $('textarea').css('height','7em');
+                },0);
+            });
+
+        </script>
+    </div>
+</body>
+</html>

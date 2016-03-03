@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <style>
+        #map-page { width: 300px; height:auto; padding: 0; }
+    </style>
+
+    <title>Event Details</title>
+    <style type="text/css">
+        html, body { height: 100%; margin: 0; padding: 0;}
+        #map-canvas { height: 80%; margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+
+    <div data-role="page" class="ui-page-theme-a">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        function initialize() {
+            var myLatlng = new google.maps.LatLng( 34.0205,-118.2856);
+
+            var mapOptions = {
+                zoom: 18,
+                center: myLatlng
+            };
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            var marker1 = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Dining with Trojans'
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        function initializeNewMap() {
+            // add your code
+            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+            google.maps.event.trigger(map, 'resize');
+        }
+        $('#eve').click(function() {
+            $(this).val('clicked');
+        });
+    </script> 
+
+       
+       <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-minus ui-btn-icon-notext"></span>
+                 <ul class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event" style="color:white; background-color: #35D4D4;">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                <ul style="display:none" class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+        </div>  
+
+
+        <div class="header-container">
+           <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+              <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px;"></a>
+              <div style="text-align:center">
+                 <h3 style="">Event Details</h3>
+              </div>
+              <a href="event_chat.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-btn-inline ui-icon-comment ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+           </div>
+        </div>
+        <div data-role="main" class="ui-content eventdetail" style="padding-bottom: 100px;">
+            <div class="c4_eventname" style="background-image: url(images/profile-bg.jpg);"> 
+                <img src="images/dining.png">
+                <h3>Dining with Trojans</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="c_event4" style="margin-bottom: -20px;">
+                <form method="post" action="demoform.asp">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a field-name event-detail-field" style="width: 40%">
+                            <label style="line-height:30px"><strong>Date:</strong></label>
+                        </div>
+                        <div class="ui-block-b event-detail-value" style="width: 60%">
+                            <label style="line-height:30px">Jan 14, 2015</label>
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a event-detail-field" style="width: 40%">
+                            <label style="line-height:30px;"><strong>Time:</strong></label>
+                        </div>
+                        <div class="ui-block-b event-detail-value" style="width: 60%">
+                            <label style="line-height:30px">6:00 pm-8:30 pm</label>
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a event-detail-field" style="width: 40%">
+                            <label style="line-height:30px"><strong>Location:</strong></label>
+                        </div>
+                        <div class="ui-block-b event-detail-value" style="width: 60%">
+                            <label style="line-height:30px">VKC 201</label>
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a event-detail-field" style="width: 40%">
+                            <label style="line-height:30px"><strong>Open Seats:</strong></label>
+                        </div>
+                        <div class="ui-block-b event-detail-value" style="width: 60%">
+                            <label style="line-height:30px">100+</label>
+                        </div>
+                    </div>
+
+                    <div class="c4_detail" style="height:400px">
+                        <a href="eventdetail.html" rel="external"> <div id="map-canvas" ></div>  </a>
+                       Dine with trojans at VKC.
+
+                    </div>
+
+                    <div stye="text-align: center; margin:0px auto;">
+                         <a href="index.html" class="ui-shadow ui-btn"
+                            style="position: fixed; background-color:#FF5824;  padding:10px;   display: block; bottom: -1px; margin: 5px -2em; font-size:15px; color:white; width:50px; height: 20px; text-shadow: none; z-index: 2">Back</a>
+                    </div>
+                    <div style="clear: both"></div>
+                </form>
+            </div>
+            <div class="ui-block-a event-detail-field" style="width: 40%; margin-left: 2em">
+                <label style="line-height:30px"><strong>Attendants:</strong></label>
+            </div><br/><br/>
+            <div class="p-friend-div" style="margin-top: 0px; margin-bottom: 0px;">
+                <ol>
+                    <li><a href="friend_detail.html">
+                            <div style="text-align: center">
+                                <img src="images/akshay_round.gif"/><br/>
+                                <span style="font-size: 9pt; margin:0; padding: 0;">Akshay</span>
+                        </div></a>
+                    </li>
+                     <li><a href="friend_detail.html">
+                            <div style="text-align: center">
+                                <img src="images/alexa_round.gif"/><br/>
+                                <span style="font-size: 9pt; margin:0; padding: 0;">Alexa</span>
+                        </div></a>
+                    </li>
+                    <li><a href="friend_detail.html">
+                            <div style="text-align: center">
+                                <img src="images/bella_round.gif"/><br/>
+                                <span style="font-size: 9pt; margin:0; padding: 0;">Bella</span>
+                        </div></a>
+                    </li>
+                    <li><a href="friend_detail.html">
+                            <div style="text-align: center">
+                                <img src="images/dean_round.gif"/><br/>
+                                <span style="font-size: 9pt; margin:0; padding: 0;">Dean</span>
+                        </div></a>
+                    </li>
+                    
+                    <li><a href="friend_detail.html">
+                            <div style="text-align: center">
+                                <img src="images/saloni_round.gif"/><br/>
+                                <span style="font-size: 9pt; margin:0; padding: 0;">Saloni</span>
+                        </div></a>
+                    </li>
+                   
+                    
+                    <li style="">
+                        <a href="friend.html" class="ui-icon-carat-r ui-btn-icon-notext" style="width: 20px; height:20px; position:relative; top: -40px; left: 10px; z-index: 0;"></a>
+                    </li>
+                </ol>
+            </div>
+            <div class="ui-grid-b">
+                <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-shadow ui-btn-inline event-details-plus"
+                    style="position: fixed; top: 50px; right: 10px; padding-right: 25px; font-size:15px; width: 35px; height: 15px; line-height: 15px; margin-right:0px; background-color: #8AE62E; color: white; text-shadow: none; font-weight: 900;">
+                    Join</a> 
+                <div data-role="popup" class="ui-corner-all ui-grid-b" id="myPopupDialog" style="padding: 10px; text-align: center; font-weight: bold">  
+                    <p>You joined the <span style="color: green">Dining with Trojans</span> Event!</p>
+                    <a href="upcoming_event_highlight.html" class="ui-btn ui-shadow ui-btn-inline ui-btn-w pop-up-btn" data-rel="">Okay</a>
+                    <br/>
+                    <a href="/friendsearch/index.html" class="ui-btn ui-shadow ui-btn-inline ui-btn-w pop-up-btn" data-rel="back">Invite Friends</a>
+                    <br/>
+                    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w pop-up-btn" data-rel="back">Post on Facebook</a>
+                </div> 
+                <a type="label" id="count" value=""></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/menu-bar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+a{
+    text-decoration: none;
+}
+
+.profile .p-info {
+    margin:0;
+    background-image: url(images/profile-bg.jpg);
+    background-position: 30%;
+    text-align: center;
+    text-shadow: none;
+    padding:10px;
+    color:#fff
+}
+
+.profile .p-info img{
+    width:100px;
+    height:100px;
+    margin:0;
+}
+
+.profile .p-info .btn-edit{
+    position:relative;
+}
+
+.p-info h3{
+    font-size: 15pt;
+}
+.p-info p{
+    font-size: 11pt;
+}
+
+.profile .p-info-b {
+    margin: 0px 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.p-info-b .ui-block-b {
+    margin-top: -40px;
+    float:right;
+}
+
+.p-info-b .ui-grid-a{
+    width: 60%;
+}
+
+.p-friend-div {
+    z-index: 1;
+    height:50px;
+    width:100%;
+    margin-left: -10px;
+    
+}
+
+.p-friend-div ol {
+    list-style-type: none;
+    text-align: center;
+    padding: 4px 0 4px 0;
+    text-align: center;
+}
+
+.p-friend-div ol li {
+    display: inline-block;
+    padding: 0 4px;  
+}
+
+.p-friend-div ol li img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.p-friend-div ol li span {
+   padding-bottom: 20px;
+}

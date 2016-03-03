@@ -1,0 +1,36 @@
+a{
+    text-decoration: none;
+}
+
+.friends-list {
+    width:100%;
+}
+
+.friends-list .friends-row {
+    z-index: 1;
+    width:100%;
+    padding: 5px 0;
+    
+}
+
+.friends-list .friends-row ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 4px 0 4px 0;
+    text-align: center;
+}
+
+.friends-list .friends-row ul li {
+    display: inline-block;
+    padding: 0 4px;  
+}
+
+.friends-list .friends-row ul li img {
+    width: 70px;
+    height: 70px;
+
+}
+
+.friends-list .friends-row ul li span {
+   padding-bottom: 20px;
+}

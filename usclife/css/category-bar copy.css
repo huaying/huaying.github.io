@@ -1,0 +1,100 @@
+/* Things I changed from main */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+    margin:0;
+}    
+
+.thumb {
+    margin-top:5px;
+}
+
+.thumb-box{
+    padding:0;
+    background-color:transparent !important;
+    border:none !important;
+    text-shadow:none !important;
+    box-shadow: none !important;
+
+}
+
+img.pull-left{
+    width: 55px;
+    height: 55px;
+}
+
+
+
+
+.event-name {
+    font-size: 18px;
+    color:black;
+}
+
+.event-loc{
+    color:#e64848;
+    font-size: 13px;
+}
+
+.event-date{
+    color:#8e8e8e;
+    font-size: 11px;
+}
+
+
+
+
+.page-title{
+    text-align: center;
+    padding: 15px;
+    background-color:black;
+    color:white;
+    border-top: 0px solid #e3e3e3;
+    border-bottom: 0px solid #e3e3e3;
+}
+
+.change-category {
+    text-align: center;
+    position: absolute;
+    top: 2px;
+    left: 45px;
+    z-index: 1;
+}
+
+.change-category img{
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;  
+}
+
+.category-bar {
+    background-color:#555555;
+    width: 100%;
+    display: none;
+}
+
+.category-bar ol {
+    list-style-type: none;
+    text-align: center;
+    padding: 4px 0 4px 0;
+}
+
+.category-bar ol li {
+    display: inline-block;
+    padding: 0 4px;  
+}
+
+.category-bar ol li img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -moz-box-shadow: 3px 3px 5px #424242;
+    -webkit-box-shadow: 3px 3px 5px #424242;
+    box-shadow: 3px 3px 5px #424242;
+
+}
+
+.header-container {
+    position: relative;
+}

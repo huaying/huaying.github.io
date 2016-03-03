@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+    <title>Log In</title>
+
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" >
+        
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                 <ul style="display:none" class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                <ul style="display:none" class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in" style="color:white; background-color: #35D4D4;">Log In</a></li>
+         </ul>
+        </div>    
+      
+      
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+            <div style="text-align:center">
+               <h3>Log In</h3>
+            </div>
+         </div>
+      </div>
+
+        <div data-role="main" class="ui-content c_event2" style="width: 80%; text-align: center;">
+            <h3>Welcome to USCLife</h3>
+            <h5>Please Log In</h5>
+            
+             <form>
+
+                <input type="text" name="fname" id="email" placeholder="Email">
+                <label id="email_error" style="color:red;font-weight:bold;display:none">Email is required.</label>
+
+                <input type="password" name="fname" id="passwd" placeholder="Password">
+                <label id="passwd_error" style="color:red;font-weight:bold;display:none">Password is required.</label>
+
+                <label><input type="checkbox" class="btn-mini"/>Remember Me</label>
+
+                
+
+                <a class="ui-btn login-btn">Login</a>
+
+                 <div style="text-align:center; font-size: 11pt;">
+                <br/>
+                    <a>Forgot username/password?</a>
+
+                 <br/><br/>
+
+                  <a href="signup.html">Dont have an account yet? Sign up here!</a>
+                </div>
+
+              </form>
+        </div>
+
+
+        </div>
+
+        <script src="js/menu-bar.js"></script>
+       
+    </body>
+    </html>

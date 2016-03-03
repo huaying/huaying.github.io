@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/latest/jqm-datebox.core.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.flipbox.min.js"></script>
+
+    <title>Create Event</title>
+
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-c" id="c_event3">
+        
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-minus ui-btn-icon-notext"></span>
+                 <ul class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event" style="color:white; background-color: #35D4D4;">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                <ul style="display:none" class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+        </div>  
+
+
+        <div class="header-container">
+           <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+              <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px;"></a>
+              <div style="text-align:center">
+                 <h3 style="">Create an Event</h3>
+              </div>
+           </div>
+        </div>
+
+
+        <div style="clear:both"></div>
+      
+      
+
+        <div data-role="main" class="ui-content" >
+             <div class="container">
+                <ol class="progress-meter">
+                  <li class="progress-point done">Category</li><li class="progress-point done">Info</li><li class="progress-point current">Details</li><li class="progress-point todo">Finished</li>
+                </ol>
+            </div>
+            <div class="c_event3">
+             <form method="post" action="demoform.asp">
+  <table style="border-spacing:10px">
+                    <tr>
+                        <td><img style="display:block;height:50px;width:50px" class="pull-left" src="images/fun.png"/></td>
+                        <td><p style="font-size:20px"><b>Christmas Party</b></p></td>
+                    </tr> 
+                </table>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:60px"><strong>Available seats:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <select>
+                            <option>Less than 5</option>
+                            <option>5-10</option>
+                            <option>11-20</option>
+                            <option>21-30</option>
+                            <option>31-40</option>
+                            <option>41-50</option>
+                            <option selected="selected">100+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label><strong>Details:</strong></label>
+                <textarea></textarea>
+
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"><a href="index.html" class="ui-shadow ui-btn" style="font-size:15px">Cancel</a></div>
+                    <div class="ui-block-b"><a href="createevent2.html" class="ui-shadow ui-btn" style="font-size:15px">Back</a></div>
+                    <div class="ui-block-c"><a href="createevent4.html" class="ui-shadow ui-btn" style="font-size:15px">Next</a></div>
+                </div>
+
+            </form>
+            </div>
+        </div>
+        <script>
+            $('#c_event3').on("pageshow",function(){
+                console.log(123);
+                setTimeout(function(){
+                    $('textarea').css('height','7em');
+                },0);
+            });
+
+        </script>
+    </div>
+    <script src="js/menu-bar.js"></script>
+    
+</body>
+</html>

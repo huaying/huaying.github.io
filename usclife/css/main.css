@@ -1,0 +1,284 @@
+@import url('./alexa.css');
+@import url('./bella.css');
+@import url('./menu-bar.css');
+@import url('./category-bar.css');
+@import url('./profile.css');
+@import url('./friend-list.css');
+@import url('./chat.css');
+@import url('./ion.rangeSlider-2.0.1/css/ion.rangeSlider.css');
+@import url('./ion.rangeSlider-2.0.1/css/ion.rangeSlider.skinNice.css');
+
+
+.ui-content {
+    padding:0;
+}
+.ui-collapsible-content{
+    padding:0;
+}
+.ui-panel-inner {
+    padding:.5em;
+}
+
+#menu .ui-collapsible-content>.ui-listview{
+    margin:0;
+
+}
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.footer-map-list a{
+    width:100%;
+    margin:0;
+    position:relative;
+    left:-4px;
+    padding:13px;
+}
+
+.thumb-box{
+    padding:0;
+    top:5px;
+    border:none !important;
+    text-shadow:none !important;
+    box-shadow: none !important;
+
+}
+.thumb {
+    width:32px;
+    
+}
+
+.header-scroll li{
+
+    list-style:none;
+    width:22%;
+    padding:0;
+    margin:0;
+    display: inline-block;
+}
+.header-scroll ul{
+    width:100%;
+    padding:0;
+    margin:2px 0;
+  overflow-x:auto;
+    white-space:nowrap;
+
+}
+.header-scroll img{
+    width:100%;
+}
+.header-scroll {
+}
+.clearfix {
+    clear:both;
+}
+.pull-left{
+    float:left;
+} 
+.text-center{
+    text-align:center;
+}
+
+.collpase-center a{
+    text-align: center !important;
+    padding-left: 2.5em !important;
+
+}
+.menu-page .ui-collapsible-inset .ui-collapsible-content {
+    margin:10px;
+}
+
+
+.event-header {
+   vertical-align:middle;
+}
+.event-header img{
+    width:70px;
+}
+.event-header div{
+    margin-left:10px;
+}
+.map_preview {
+    width:100%;
+}
+
+
+
+
+/* Friend List */
+.anchor {
+    font-weight:bold;
+    margin:10px;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.friend-list li img{
+    margin:12px;
+}
+
+.friend-list li{
+    text-align:center;
+}
+
+/* Friend List */
+.addfriend .search{
+    padding:1em 1em 0;
+}
+/* Friend Detail */
+.f-detail .f-info {
+    margin:1em 2em 6em;;
+}
+.f-detail .f-info img{
+    margin:0 1.2em;
+    width:25%;    
+    max-width:89px;
+}
+.f-detail .f-info h3{
+ 
+}
+
+.f-detail .f-eventbox {
+    margin: 1em 3em 2em;
+}
+.f-detail .f-eventbox p{
+    color: #ccc;
+    padding:1.2em;
+    border: 1px solid #aaa;
+}
+
+.f-detail .f-info .btn-add{
+    position:absolute;
+    top:2.8em;
+    right:0;
+}
+/* Profile */
+.profile .p-info.edit{
+    margin:2.5em 0 0;
+    text-align:center;
+}
+.profile .p-info-b {
+    padding-bottom:4em;
+}
+
+.profile .ui-checkbox .ui-btn{
+    margin: -1em 0 0 0;
+}
+
+.profile .p-info .btn-uploadimg{
+    font-size:13px;
+    position: absolute;
+    right: 32%;
+    top: 13%;
+    padding: .3em;
+}
+/*
+.p-info h3{
+    line-height:36px;
+}
+.p-info p{
+    color:#616161;
+    font-weight:bold;
+}
+*/
+.p-info-b span,.p-info-b .p-detail p{
+    margin: 0;
+    color:#616161;
+    font-weight:bold;
+}
+
+.p-info-b label.check{
+}
+.p-info-b  .ui-input-text{
+    /*margin: .5em .3em;*/
+}
+.p-info-b  textarea.ui-input-text{
+    margin: 0;
+}
+/* feedback */
+.feedback label{
+    font-size:1.3em;
+    padding:.4em;
+    text-align:center;
+    width:auto;
+}
+.feedback {
+    margin:1.4em 1.8em;
+}
+.feedback .ui-grid-a .ui-block-a {
+    text-align:center;
+}
+
+/*About Us*/
+.ui-content.aboutus{
+    overflow:hidden;
+}
+.aboutus {
+    margin:2em;
+}
+.bold{
+    font-weight:bold;
+    color:rgb(247, 48, 56);
+}
+
+/* create event  */
+.c_event2,.c_event3,.c_event4{
+    padding: 1.8em;
+}
+.c_event2 label{
+    font-weight:bold;
+}
+.c_event2 .ui-grid-a>.ui-block-a,.c_event2 .ui-grid-a>.ui-block-b{
+    padding:4px;
+}
+
+.eventdetail .c4_eventname {
+    margin:0;
+    background-image: url(images/profile-bg2.jpg);
+    background-position: 77% 50%;
+    text-align: center;
+    text-shadow: none;
+    padding:10px;
+    color:#fff
+}
+
+.c4_eventname img{
+    width:25%;
+    max-width:72px;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.c4_eventname h3{
+    font-size: 16pt;
+    padding:.3em;
+}
+.c4_detail,.c5_detail{
+    word-spacing:3px;
+    padding:.8em;
+    margin:.8em 0;
+    border:2px solid #ccc;
+    height: 4.5em;
+}
+
+
+.pop-up-btn {
+    width: 140px;
+    height: 10px;
+    padding:10px;
+    line-height: 10px;
+    font-size: 10pt;
+}
+
+.btn-back {
+    color:white !important;
+    font-weight:normal !important;
+    border: 3px solid #EC8888 !important;
+
+}
+
+.edit_detail .event_name{
+    
+}
+.edit_detail .event_name .ui-input-text{
+}

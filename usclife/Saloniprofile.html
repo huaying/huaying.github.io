@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>Friend Details</title>
+
+
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" id="profile">
+
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                 <ul style="display:none" class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-minus ui-btn-icon-notext"></span>
+                <ul class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event" style="color:white; background-color: #35D4D4;">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+        </div>    
+      
+      
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+            <div style="text-align:center">
+               <h3>Saloni's Profile</h3>
+            </div>
+         </div>
+      </div>
+
+
+        <div data-role="main" class="ui-content profile" >
+            <div class="p-info" style="background: url(images/profile-bg.jpg);background-position: 60% 71%;"> 
+                <img src="images/saloni_round.gif">
+                <h3>Saloni Priya</h3>
+                <p>Senior<br>Computer Science</p>
+            </div>
+            <div class="clearfix"></div>
+
+
+            <div class="p-info-b">
+
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Phone:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+                    <span>626-247-2620</span>
+                </div>
+
+
+                <div style="clear:both"></div>
+                <br/>
+
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Email:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><span>saloni@usc.edu</span></div>    
+                </div>
+
+
+                <div style="clear:both"></div>
+                <br/>
+
+                <div class="p-detail">
+                    <h4>Details:</h4>
+                    <p>
+                        I love skydiving!
+                    </p>
+                </div>
+
+                <br/>
+                <div class="p-friends">
+                    <h4>Friends:</h4>
+
+
+                    <div class="p-friend-div" style="margin-bottom: 50px;">
+                        <ol>
+                            <div class="p-friend-div" style="margin-bottom: 50px;">
+                                <ol>
+                                    <li><a href="DeanProfile.html">
+                                            <div style="text-align: center">
+                                                <img src="images/dean_round.gif"/><br/>
+                                                <span style="font-size: 9pt; margin:0; padding: 0;">Dean</span>
+                                        </div></a>
+                                    </li>
+                                    <li><a href="Bellaprofile.html">
+                                            <div style="text-align: center">
+                                                <img src="images/bella_round.gif"/><br/>
+                                                <span style="font-size: 9pt; margin:0; padding: 0;">Bella</span>
+                                        </div></a>
+                                    </li>
+                                    <li><a href="Alexaprofile.html">
+                                            <div style="text-align: center">
+                                                <img src="images/alexa_round.gif"/><br/>
+                                                <span style="font-size: 9pt; margin:0; padding: 0;">Alexa</span>
+                                        </div></a>
+                                    </li>
+                                    <li><a href="akshayprofile.html">
+                                            <div style="text-align: center">
+                                                <img src="images/akshay_round.gif"/><br/>
+                                                <span style="font-size: 9pt; margin:0; padding: 0;">Akshay</span>
+                                        </div></a>
+                                    </li>
+                                    <li style="">
+                                        <a href="friend.html" class="ui-icon-carat-r ui-btn-icon-notext" style="width: 20px; height:20px; position:relative; top: -40px; left: 10px"></a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div id="profile_events" data-role="collapsible">
+                            <h4>Events Attending:</h4>
+
+
+                            <ul data-role="listview" data-filter="false" data-inset="true" class="create-1-event-list" style="margin:0px; overflow: scroll">
+                                <li>
+                                    <a href="eventdetail.html" style="padding-left:0px">
+                                        <h3 class="event-header">
+                                            <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                                            <div class="pull-left">
+                                                <div class="event-name">Dining with Trojans</div>
+                                                <div class="event-loc">VKC 201</div>
+                                                <div class="event-date">Jan 14, 2015 &nbsp; 6:00pm - 8:30pm</div>
+                                            </div>
+                                        </h3>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="eventdetail.html" style="padding-left:0px">
+                                        <h3 class="event-header">
+                                            <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png">
+                                            <div class="pull-left">
+                                                <div class="event-name">Lakers vs Bulls</div>
+                                                <div class="event-loc">Staples Center</div>
+                                                <div class="event-date">Jan 13, 2015 &nbsp; 7:00pm - 10:30pm</div>
+                                            </div>
+                                        </h3>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                    <div style="text-align: center; margin:0px auto;">
+                        <a href="javascript:history.back();" class="ui-shadow ui-btn btn-back"
+                            style="position: fixed; background-color:#FF5824;  padding:10px;   display: block; bottom: -1px; margin: 5px -2em; font-size:15px; color:white; width:50px; height: 20px; text-shadow: none; z-index: 2">Back</a>
+                    </div>
+                    </div>
+                </div>
+                <script src="js/menu-bar.js"></script>
+
+            </body>
+
+            </html>

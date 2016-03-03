@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./js/slidebar.js"></script>
+    <script src="./js/main.js"></script>
+    <title>USCLife</title>
+
+ 
+</head>
+<body>
+    <div class="site">
+        <div class="header" title="All Events ">
+            <div class="slidebar-toggle" >
+                <img class="menu_icon" src="img/menu-alt-64.png"/>
+            </div>
+            <div class="title">
+            <span>USCLife</span>
+            </div>
+        </div>
+        <div class="time">
+            <div class="text_date">
+                Today, 10/4/14
+            </div>
+            <div class="text_time">
+                5:00pm - 6:00pm
+            </div>
+        </div>
+        <div class="footer">
+            <div class="btn_map"><div>MAP</div></div>
+            <div class="btn_list"><div>LIST</div></div>
+        </div>
+
+        <div id="map_canvas"></div>
+        <div id="list_canvas"></div>
+
+
+
+
+    </div>
+   
+
+     <div data-role="page">
+
+    <div data-role="header">
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Welcome To My Homepage</h1>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">BacK</a>
+  </div>
+
+   <div data-role="main" class="ui-content" align="center">
+    <p>All Events</p>
+  </div>
+
+    <article>
+         <ul data-role="listview">
+             <li>
+                 <a href="#academic">
+                 <img src="images/academic.png">
+                 <p>This tab will show all the academic events</p>
+                 </a>
+             </li>
+              <li>
+                 <a href="#dining">
+                 <img src="images/dining.png">
+                 <p>This tab will show all the dining events</p>
+                 </a>
+             </li>
+              <li>
+                 <a href="#music">
+                 <img src="images/music.png">
+                 <p>This tab will show all the music events</p>
+                 </a>
+             </li>
+              <li>
+                 <a href="#fun">
+                 <img src="images/shopping.png">
+                 <p>This tab will show all the shopping events</p>
+                 </a>
+             </li>
+              <li>
+                 <a href="#academic">
+                 <img src="images/sports.png">
+                 <p>This tab will show all the sports events</p>
+                 </a>
+             </li>
+              <li>
+                 <a href="#usc">
+                 <img src="images/usc.png">
+                 <p>This tab will show all the USC events only</p>
+                 </a>
+             </li>
+             
+             <li>
+                 <a href="#All">
+                 <img src="images/all.png">
+                 <p>This tab will show all the All events only</p>
+                 </a>
+             </li>
+        </ul>
+         </article>
+  </div>
+</div>
+  
+</body>
+</html>

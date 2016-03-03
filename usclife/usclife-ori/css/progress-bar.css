@@ -1,0 +1,122 @@
+/* Things I changed from main */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+}
+
+.c_event2,.c_event3,.c_event4{
+    margin-top:-0.5em;
+    padding: 0 2em 2em 2em;
+}
+
+
+.c4_eventname img{
+    margin: 0.5em 1.2em 1em 0 ;
+    width:20%;
+    max-width:72px;
+}
+.c4_eventname h3{
+    padding:.3em;
+}
+.c4_detail{
+    word-spacing:3px;
+    padding:1em;
+    margin:1em 0;
+    border:1px solid #ccc;
+    height: 4.5em;
+}
+
+
+
+/* Progress bar */
+.container {
+  width: 101%;
+  margin: 0 auto;
+
+}
+
+.progress-meter {
+  padding: 0;
+}
+
+ol.progress-meter {
+  padding-bottom: 9.5px;
+  list-style-type: none;
+}
+ol.progress-meter li {
+  display: inline-block;
+  text-align: center;
+  text-indent: -19px;
+  height: 36px;
+  width: 24.99%;
+  font-size: 12px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+ol.progress-meter li:before {
+  position: relative;
+  float: left;
+  text-indent: 0;
+  left: -webkit-calc(50% - 9.5px);
+  left: -moz-calc(50% - 9.5px);
+  left: -ms-calc(50% - 9.5px);
+  left: -o-calc(50% - 9.5px);
+  left: calc(50% - 9.5px);
+}
+ol.progress-meter li.done {
+  font-size: 12px;
+}
+ol.progress-meter li.done:before {
+  content: "\2713";
+  height: 19px;
+  width: 19px;
+  line-height: 18.85px;
+  bottom: -28.175px;
+  border: none;
+  border-radius: 19px;
+}
+ol.progress-meter li.todo {
+  font-size: 12px;
+}
+ol.progress-meter li.todo:before {
+  content: " ";
+  height: 19px;
+  width: 19px;
+  line-height: 18.85px;
+  bottom: -28.175px;
+  border: none;
+  border-radius: 19px;
+}
+ol.progress-meter li.done {
+  color: black;
+  border-bottom-color: #B8E62E;
+}
+ol.progress-meter li.done:before {
+  color: white;
+  background-color: #B8E62E;
+}
+ol.progress-meter li.todo {
+  color: silver;
+  border-bottom-color: silver;
+}
+ol.progress-meter li.todo:before {
+  color: silver;
+  background-color: silver;
+}
+
+ol.progress-meter li.current:before {
+  content: " ";
+  height: 19px;
+  width: 19px;
+  line-height: 18.85px;
+  bottom: -28.175px;
+  border: none;
+  border-radius: 19px;
+}
+ol.progress-meter li.current {
+  color: black;
+  border-bottom-color: silver;
+}
+ol.progress-meter li.current:before {
+  color: silver;
+  background-color: silver;
+}

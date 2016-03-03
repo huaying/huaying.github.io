@@ -1,0 +1,56 @@
+[
+    {
+        "image": "http://hollywoodpantages.com/images/header_image/1412125792_h_1000x250-Wicked-Bnr2.jpg",
+        "caption": "Wicked Musical",
+        "link": "http://hollywoodpantages.com/showinfo.php?id=35",
+        "Host": "Jacob",
+        "lat": "34.0205",
+        "lng": "-118.2856"
+
+    },
+    {
+        "image": "http://lakernation.com/wp-content/uploads/2010/11/kobe_bullsg.jpg",
+        "caption": "Lakers vs Bulls",
+        "link": "http://www.nba.com/games/20150129/CHILAL/gameinfo.html",
+        "Host": "Staple Center",
+        "lat": "34.0431",
+        "lng": "-118.2672"
+
+    },
+    {
+        "image": "http://graphics.fansonly.com/schools/usc/graphics/volley-galen.jpg",
+        "caption": "Dining with Trojans",
+        "link": "http://www.usctrojans.com/trads/usc-galen-center.html",
+        "Host": "Alex",
+        "lat": "34.0202",
+        "lng": "-118.2856"
+
+    },	
+     {
+        "image": "http://sait.usc.edu/campuscenter/documents/featured/19868141121/likeusonfacebook.jpg",
+        "caption": "588 Study Session",
+        "link": "http://sait.usc.edu/campuscenter/documents/featured/19868141121/likeusonfacebook.jpg",
+        "Host": "RTCC Trojan Lounge",
+        "lat": "34.0202",
+        "lng": "-118.2856"
+
+    },
+    {
+        "image": "http://trinityboxing.com/wp-content/uploads/2014/07/IMG_8313.jpg",
+        "caption": "Taylor Swift Concert ",
+        "link": "",
+        "Host": "Russell",
+        "lat": "34.0431",
+        "lng": "-118.2672"
+
+    },
+    {
+        "image": "http://dailytrojan.com/wp-content/uploads/2012/08/LyonCenter_web.jpg",
+        "caption": "BasketBall Match ",
+        "link": "http://dailytrojan.com/wp-content/uploads/2012/08/LyonCenter_web.jpg",
+        "Host": "Russell",
+       "lat": "34.0205",
+        "lng": "-118.2856"
+
+    }
+]

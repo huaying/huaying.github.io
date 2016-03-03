@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/latest/jqm-datebox.core.min.js"></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.flipbox.min.js"></script>
+
+    <title>USCLife</title>
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" >
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+
+        <script src="./js/make-hearder.js"></script>
+        <div data-role="main" class="ui-content">
+            <div class="container">
+                <ol class="progress-meter">
+                  <li class="progress-point done">Category</li><li class="progress-point current">Info</li><li class="progress-point todo">Details</li><li class="progress-point todo">Finished</li>
+                </ol>
+            </div>
+            <div class="c_event2">
+            <form method="post" action="demoform.asp">
+                <input type="text" name="fname" id="Ename" placeholder="Event Name">
+
+                <br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label>Date Start:</label> <input type="text" data-role="datebox" data-options='{"mode":"flipbox"}'>
+                    </div>
+                    <div class="ui-block-b">
+                        <label>Date End:</label> <input type="text" data-role="datebox" data-options='{"mode":"flipbox"}'>
+                    </div>
+                </div>
+                <br>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label>Start Time:</label>
+                        <input type="text" data-role="datebox" data-options='{"mode":"timeflipbox"}'/> 
+                    </div>
+                    <div class="ui-block-b">
+                        <label>End Time:</label>
+                        <input type="text" data-role="datebox" data-options='{"mode":"timeflipbox"}'/> 
+                    </div>
+                </div>
+                <br>
+                  
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:60px"><strong>Location:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <select>
+                            <option>Accounting Library</option>
+                            <option>Bing Theatre</option>
+                            <option>Bovard Auditorium</option>
+                            <option>Cafe 84</option>
+                            <option>Cardinal Gardens</option>
+                            <option>Chipotle</option>
+                            <option selected="selected">RTCC</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"><a href="menu.html" class="ui-shadow ui-btn" style="font-size:15px">Cancel</a></div>
+                    <div class="ui-block-b"><a href="createevent.html" class="ui-shadow ui-btn" style="font-size:15px">Back</a></div>
+                    <div class="ui-block-c"><a href="createevent3.html" class="ui-shadow ui-btn" style="font-size:15px">Next</a></div>
+                </div>
+            
+            </form>
+            </div>
+            </div>
+        </div>
+
+    </body>
+    </html>

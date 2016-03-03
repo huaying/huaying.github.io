@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <script src="./js/make-hearder.js"></script>
+    <title>USCLife</title>
+</head>
+<body>
+   <div data-role="page" class="ui-page-theme-w" >
+         <script src="./js/make-hearder.js"></script>
+
+        <div data-role="main" class="ui-content eventlist" id="myevent">
+            
+            
+          <div class="category-bar">
+               <ol>
+                <li> <a href="index.html"><img href="index.html" src="images/all.png"></a></li>
+                 <li>  <a href="myevent_filter_academic.html"><img  src="images/academic.png"></a></li>
+                   <li> <a href="myevent_filter_sports.html"><img  src="images/sports.png"></a></li>
+                   <li> <a href="myevent_filter_dinning.html"><img  src="images/dining.png"></a></li>
+                   <li><a href="myevent_filter_fun.html"><img src="images/fun.png"></a></li>
+                   <li> <a href="myevent_filter_shopping.html"><img src="images/shopping.png"></a></li>
+               </ol>
+            </div> 
+         
+         <div style="clear:both"></div>
+         
+         
+         <ul data-role="listview" data-filter="true" data-inset="true" class="create-1-event-list" style="margin:0px; overflow: scroll">
+               
+              
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Dining with Trojans</div>
+                            <div class="event-loc">VKC 201</div>
+                            <div class="event-date">Jan 14, 2015 &nbsp; 6:00pm - 8:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+          
+
+         </ul>
+        <script type="text/javascript">
+            
+            $(document).on('pagebeforeshow',function(){
+               changeTitle("My Events");
+               showCategories();
+               
+               $(".change-category img").off('click').on('click',function () {
+                  $(".category-bar").slideToggle(250);
+               });
+            
+               $(".category-bar ol li img").off('click').on('click',function () {              
+                  var this_image = $(this).attr("src");
+                  $(".change-category img").attr("src", this_image);
+               });
+            });
+        </script>
+        </div>
+        
+
+    </body>
+    </html>

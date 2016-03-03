@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    
+
+    <title>Recommended Events</title>
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a main-page no_login" id="event-recommended">
+        <script src="./css/ion.rangeSlider-2.0.1/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+        <script src="./css/ion.rangeSlider-2.0.1/js/moment.min.js"></script>
+        
+        <div class="menu-bar">
+            <ul>
+               <li><a href="index.html" id="home">Home</a></li>
+               <li><a href="profile.html">Profile</a></li>
+               <li><a href="#" class="menu-event-expand">Events</a>
+                    <span class="menu-expand-btn ui-icon-plus ui-btn-icon-notext" style="width:3px; height: 3px;"></span>
+                    <ul>
+                        <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                        <li><a href="recomemdedevents.html" id="profile_event" style="background-color:#e3e3e3; color:black">Recommended</a></li>
+                        <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                        <li><a href="event_history.html" id="profile_event">History</a></li>
+                        <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                    </ul>
+               </li>
+               <li><a href="friend.html">Friends</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="feedback.html">Feedback</a></li>
+               <li><a href="signin.html" id="log-in">Log In</a></li>
+            </ul>
+        </div>
+
+
+        <div class="header-container">
+           <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+              <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px;"></a>
+              <div style="text-align:center">
+                 <h3 style="">Recommended Events</h3>
+              </div>
+              <a class="thumb-box ui-corner-all" href=""><img class="thumb search-btn" src="images/search.png"/></a>
+              <div class="change-category" style="display:none"><img src="images/all.png"></div>
+           </div>
+        </div>
+      
+        <div class="category-bar">
+           <ol>
+              <li><a href="index.html"><img style="border: 2px solid yellow;" href="upcoming_event.html" src="images/all.png"></a></li>
+                <li><a href="event_academic.html"><img src="images/academic.png"></a></li>
+              <li><a href="event_sports.html"><img src="images/sports.png"></a></li>
+              <li><a href="event_dinning.html"><img  src="images/dining.png"></a></li>
+              <li><a href="event_fun.html"><img src="images/fun.png"></a></li>
+              <li><a href="event_shopping.html"><img src="images/shopping.png"></a></li>
+           </ol>
+        </div>
+        
+        
+        
+        
+        <!-- Date slider -->
+        <div class="date-slider slider-box">
+            <span class="slide-box-span">Date: </span>
+            <div class="slider-resize">
+                <input data-role="none" type="text" id="date-range" name="date-range" value="" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#date-range").ionRangeSlider({
+                type: "dobule",
+                hide_min_max: true,
+                hide_from_to: false,
+                min: +moment().subtract(1, "months").format("X"),
+                max: +moment().add(6, "months").format("X"),
+                from: +moment().format("X"),
+                to: +moment().add(4, "months").format("X"),
+                prettify: function (num) {
+                    return moment(num, "X").format("LL");
+                }
+            });
+        </script>
+        
+        <!-- Time range -->
+        <div class="time-slider slider-box">
+            <span class="slide-box-span">Time: </span>
+            <div class="slider-resize">
+                <input data-role="none" type="text" id="time-range" name="time-range" value="" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#time-range").ionRangeSlider({
+                type: "double",
+                grid: false,
+                from: 9,
+                hide_min_max: true,
+                hide_from_to: false,
+                values: [
+                    "12am", "1am", "2am", "3am", "4am", "5am", "6am", "7am", "8am", "9am", "10am", "11am",
+                    "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm", "10pm", "11pm"
+                ]
+            });
+        </script>
+
+        <div style="clear:both"></div>
+        
+      
+      
+      <div data-role="main" class="ui-content eventlist">
+         
+         <div style="clear:both"></div>
+         
+         <ul data-role="listview" data-filter="true" data-inset="true" class="create-1-event-list" style="margin:0px; overflow: scroll">
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png"">
+                        <div class="pull-left">
+                            <div class="event-name">Tennia</div>
+                            <div class="event-loc">Location: Lyon Center Court</div>
+                            <div class="event-date">Time: Mon- Sat 9:00 AM to 12:00 PM</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png">
+                        <div class="pull-left">
+                            <div class="event-name">Lakers vs Bulls</div>
+                            <div class="event-loc">Staples Center</div>
+                            <div class="event-date">Jan 13, 2015 &nbsp; 7:00pm - 10:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+               <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png">
+                        <div class="pull-left">
+                            <div class="event-name">Lakers vs Bulls</div>
+                            <div class="event-loc">Staples Center</div>
+                            <div class="event-date">Jan 13, 2015 &nbsp; 7:00pm - 10:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+
+         </ul>
+         <script src="js/menu-bar.js"></script>
+        </div>
+</body>
+</html>

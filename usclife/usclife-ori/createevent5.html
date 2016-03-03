@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+    <title>USCLife</title>
+    
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" >
+         <script src="./js/make-hearder.js"></script>
+
+        <div data-role="main" class="ui-content" >
+            <div class="container">
+                <ol class="progress-meter">
+                  <li class="progress-point done">Category</li><li class="progress-point done">Info</li><li class="progress-point done">Details</li><li class="progress-point done">Finished</li>
+                </ol>
+            </div>
+            <div class="c_event4">
+            <div class="c4_eventname">
+                <img class="pull-left" src="images/fun.png"/>
+                <h3 class="pull-left">Christmas Party</h3>
+                <div class="clearfix"></div>
+            </div>
+            <form method="post" action="demoform.asp">
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a field-name">
+                        <label style="line-height:30px"><strong>Date:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">Dec 24, 2014</label>
+                    </div>
+                </div>
+                
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:30px;"><strong>Time:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">5:30 pm-9:30 pm</label>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:30px"><strong>Location:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">Ronald Tutor Campus Center (RTCC)</label>
+                    </div>
+                </div>
+
+              
+                <div class="c4_detail">
+                   Thanks for registering
+                  
+                    Celebrate Christmas with some fellow Trojans!
+                    See you at the event.
+                     
+                </div>
+                 <div class="ui-grid-b">
+                     <div class="progress-point done"></div>
+               <div class="bearright">
+                    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">OK</a>
+                  <div data-role="popup" class="ui-corner-all" id="myPopupDialog">
+                      <div data-role="main" class="ui-content">
+   
+                          <p>"You have created an awesome event "Christmas Party" at RTCC.</p>
+                            <a href="myevent_showCreatedEvent.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-left" data-rel="">Ok</a>
+    
+                            <a href="/friendsearch/index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-center" data-rel="back">Invite Friends</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-right" data-rel="back">Post on Facebook</a>
+    </div>     
+    </div> 
+                   
+                   <!-- <a href="myevent_showCreatedEvent.html" class="ui-shadow ui-btn" style="font-size:20px"-->
+                     </div>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

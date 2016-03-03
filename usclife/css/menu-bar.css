@@ -1,0 +1,126 @@
+.header-container div h3{
+    text-shadow: none;
+}
+.header-container .ui-btn{
+    border-style:none;
+}
+
+.thumb-box {
+    background-color:transparent !important;
+    padding-top:5px;
+}
+
+.thumb {
+    width:30px;
+}
+
+.menu-bar {
+    position:fixed;
+    z-index: 5;
+    top: 50px;
+    left: -185px;
+    height: 100%;
+    background-color: whitesmoke;
+    text-shadow: none;
+    text-align: center;
+    overflow: scroll;
+    font-size:20px;
+}
+
+.menu-bar ul {
+    margin: 0; 
+    padding: 0;
+    width:185px;
+    list-style-type: none;
+    overflow: scroll;
+}
+
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #424242; 
+    padding: 8px 11px;
+    background-color: white;
+    display:block;
+    border-bottom: 1px solid #f7f7f7
+}
+
+
+.menu-expand-btn {
+    position:relative;
+    left: 70px;
+    top: -14px;
+}
+ 
+.menu-bar ul li a:visited {
+    color: #424242; 
+}
+ 
+.menu-bar ul li a:hover, .menu_simple ul li .current {
+    color: #424242; 
+}
+
+.menu-bar ul li a img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu-bar ul li a span {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.header-container {
+    position: fixed;
+    width:100%;
+    z-index: 4;
+    height:50px;
+}
+
+#home {
+    background-color:#555555;
+    color:white;
+}
+
+#profile_event {
+    background-color:#eee;
+    color: #424242;
+}
+
+#log-in{
+    background-color:#555555;
+    color: white;
+}
+
+.active-menu-page {
+    background-color:#555555;
+    color: white;
+}
+
+
+.ui-content {
+    width: 100%;
+    margin-top:50px;
+}
+
+.ui-filterable{
+    position: fixed;
+    z-index:1;
+    top: -20px;
+    width:100%;
+    background-color: #555555;
+    display: table;
+    margin: 0 auto;
+    height:50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.ui-filterable div {
+    margin: .5em auto;
+}
+
+.ui-input-search {
+    width:70%
+}

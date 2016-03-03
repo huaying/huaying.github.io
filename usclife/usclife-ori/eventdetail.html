@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <style>
+        html, body, #map-canvas  { height: 200px; width: 400px; margin: 0; padding: 0; }
+        /* center the image in the popup */
+       
+        .page-map #mapcontent {
+            width: 200px;
+            height: 400px;
+            padding: 0;
+            margin:0;
+           
+        }
+    </style>
+   
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng( 34.0205,-118.2856);
+  var mapOptions = {
+    zoom: 18,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Christmas Party</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>RTCC Torjan Lounge</b>, also referred to as <b>Generation Lounge</b>,  ' +
+      ' is hosting a Christmas Party on the eve of 24th December '+
+      '</p>'+
+      '<p>Attribution: RTCC , <a href="http://sait.usc.edu/campuscenter/tourcollection.asp">'+
+      'http://sait.usc.edu/campuscenter/</a> '+
+      '</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <title>USCLife</title>
+</head>
+<body>
+    <script type="text/javascript">
+       $('#eve').click(function() {
+       $(this).val('clicked');
+});
+    </script>
+    
+    <script>
+function change(value){
+document.getElementById("eve").innerHTML="";
+document.getElementById("count").innerHTML= "Thanks for Registering <img src='images/saved.png' width='50px' height='50px' />";
+}
+    </script>
+    <div class="site">
+        <div class="header" title="Event's Detail Page">
+            <div class="slidebar-toggle" >
+                <img class="menu_icon" src=""/>
+            </div>
+            <div class="title">
+            <span>Event Details</span>
+            </div>
+        </div>
+     <div data-role="page">
+
+
+   <div data-role="main" class="ui-content" align="center">
+    <p> 
+        	  <div class="c4_eventname">
+                <img class="pull-left" src="images/fun.png"  width="100px" height="100px"/>
+                <h3 class="pull-left">Christmas Party</h3>
+                <div class="clearfix"></div>
+            </div>
+            <form method="post" action="demoform.asp">
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a field-name">
+                        <label style="line-height:30px"><strong>Date:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">Dec 24, 2014</label>
+                    </div>
+                </div>
+                
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:30px;"><strong>Time:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">5:30 pm-9:30 pm</label>
+                    </div>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:30px"><strong>Location:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <label style="line-height:30px">Ronald Tutor Campus Center (RTCC)</label>
+                                           </div>
+                 </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                       <h3>Event on Map</h3>
+                          <div id="map-canvas"></div>
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                 </div>
+<br>
+
+                  <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Join Event</a> 
+                
+                 <div data-role="popup" class="ui-corner-all" id="myPopupDialog">
+    <div data-role="main" class="ui-content">
+   
+        <p>"You joined Christmas Party at RTCC!!!</p>
+        <a href="upcoming_event.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-left" data-rel="">Ok</a>
+    
+        <a href="/friendsearch/index.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-center" data-rel="back">Invite Friends</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-w ui-icon-back ui-btn-icon-right" data-rel="back">Post on Facebook</a>
+    </div>     
+    </div> 
+<br>
+ <a type="label" id="count" value=""></a>
+                </div>
+       	
+	
+  <div class="category-bar">
+           <h3> People attending this event</h3>
+      <table>
+  <tr>
+    <th>James Parker</th>
+    <th>Jenna </th>
+    <th>Alice </th>
+  </tr>
+  <tr>
+    <td> <a href="jamesprofile.html"><img href="jamesprofile.html" src="images/mrx.jpg" height="100px"> </a></td>
+    <td><a href="jennaprofile.html"> <img href="jennaprofile.html" src="images/missy.jpg" height="100px"> </a></td>
+      <td> <a href="aliceprofile.html"><img href="aliceprofile.html" src="images/girl.png" height="100px"> </a> </td>
+  </tr>
+</table>
+</div> 
+       
+        <div class="category-bar">
+           <h3> Last Year Party Images</h3>
+      <table>
+  <tr>
+    <th></th>
+    <th> </th>
+    <th></th>
+  </tr>
+  <tr>
+    <td> <a href=""><img href="" src="images/fun.png" height="100px"> </a></td>
+    <td><a href="jennaprofile.html"> <img href="" src="images/burger.jpg" height="100px"> </a></td>
+      <td> <a href="aliceprofile.html"><img href="" src="images/pastry.jpg" height="100px"> </a> </td>
+  </tr>
+</table>
+</div> 
+         </div>
+</div>
+</body>
+</html>

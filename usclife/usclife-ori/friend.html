@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>USCLife</title>
+</head>
+<body>
+    
+    
+    <div data-role="page" class="ui-page-theme-a" id="friend">
+         <script src="./js/make-hearder.js"></script>
+
+ 
+   
+        <div data-role="main" class="ui-content">
+            <a href="addfriends.html" class="ui-btn">Search and Add Friends</a>
+                    
+            <div data-role="popup" class="ui-corner-all" id="del">
+                <div style="padding:20px 20px 14px">
+                   
+                    <button class="ui-btn ui-icon-check ui-btn-icon-left ui-btn-inline">Check</button>
+                    <button class="ui-btn ui-icon-delete ui-btn-icon-left ui-btn-inline">Cancel</button>
+                </div>
+            </div>
+           
+            
+            
+<ul data-role="listview" id="listView" class="friend-list">
+     <li data-role="list-divider" class="ui-li-accordion-head">Title name</li>
+    <li>
+        <div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="true" >
+ 	    <h3>   
+           Jacob Jones
+        </h3>
+        <p class="friend-link">
+        <a href="#del" data-rel="popup" data-position-to="window" data-transition="pop" class="anchor">
+          
+            <table data-role="table" class="ui-responsive">
+        <thead>
+        <tr>
+          <th> </th>
+          <th>Name</th>
+          <th>Major</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>PostalCode</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <img src="images/jacob.png" height="100px" /></td>
+          <td>Jacob Jone</td>
+          <td>Computer Science</td>
+          <td>Obere Str. 57</td>
+          <td>Berlin</td>
+          <td>12209</td>
+          <td>Germany</td>
+        </tr>
+        </table>
+            <input type="button" value="Add as Friend" ></input></a>
+         <a href="jacobprofile.html" class="anchor"> <input type="button" value="Details" ></input> </a>
+        </p>
+        <div class="category-bar">
+          
+         <h3> His Friend</h3>
+             <ol>
+                 
+                  <a href="jamesprofile.html"><img href="jamesprofile.html" src="images/mrx.jpg" height="100px"> </a>
+                    <br>James <br>
+                   <a href="jennaprofile.html"> <img href="jennaprofile.html" src="images/missy.jpg" height="100px"> </a>
+                  <br>Jenna <br>
+                   <a href="aliceprofile.html"><img href="aliceprofile.html" src="images/girl.png" height="100px"> </a>
+                  <br>Alice <br>
+               </ol>
+            </div>   
+                  <article>
+                  <header>
+                    <h1> Event going to </h1>
+                      <p><a href="event_sports.html"><img  src="images/sports.png" height="100px"></a></p>
+                    <p> Date : 13 January 2015</p>
+                    <p> Time : 3:00 p.m.</p>
+                    <p> Venue : Lyon Center USC</p>
+                </header>
+                </article>
+            </div>
+       </div>
+   
+        <div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="true" >
+ 	    <h3>   
+           James
+        </h3>
+        <p class="friend-link">
+        <a href="#del" data-rel="popup" data-position-to="window" data-transition="pop" class="anchor">
+          
+            <table data-role="table" class="ui-responsive">
+        <thead>
+        <tr>
+          <th> </th>
+          <th>Name</th>
+          <th>Major</th>
+          <th>Address</th>
+          <th>City</th>
+          <th>PostalCode</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> <img src="images/mrx.jpg" height="100px" /></td>
+          <td>James Parker</td>
+          <td>MBA </td>
+          <td>Ellendale Str. 58</td>
+          <td>Paris</td>
+          <td>12206</td>
+          <td>France</td>
+        </tr>
+        </table>
+            <input type="button" value="Add as Friend" ></input></a>
+         <a href="jamesprofile.html" class="anchor"> <input type="button" value="Details" ></input> </a>
+        </p>
+        <div class="category-bar">
+          
+         <h3> His friend</h3>
+             <ol>
+                   <a href="jacobprofile.html"><img href="jacobprofile.html" src="images/jacob.png" height="100px"> </a>
+                    <br>Jacob <br>
+                   <a href="jennaprofile.html"> <img  href="jennaprofile.html" src="images/missy.jpg" height="100px"> </a>
+                  <br>Jenna <br>
+                   <a href="aliceprofile.html"><img href="aliceprofile.html" src="images/girl.png" height="100px"> </a>
+                  <br>Alice <br>
+               </ol>
+            </div>   
+                  <article>
+                  <header>
+                    <h1>  Going to events </h1>
+                    <p><a href="event_sports.html"><img  src="images/sports.png" height="100px"></a></p>
+                    <p> Date : 13 January 2015</p>
+                    <p> Time : 3:00 p.m.</p>
+                    <p> Venue : Lyon Center USC</p>
+                </header>
+                </article>
+            </div>
+       </div>
+    </li>
+   </ul>
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

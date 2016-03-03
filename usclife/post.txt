@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    
+       <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="./js/slidebar.js"></script>
+    <script src="./js/main.js"></script>
+    <title>USCLife</title>
+
+ 
+</head>
+<body>
+    <div class="site">
+        <div class="header" title="Profile Page">
+            <div class="slidebar-toggle" >
+                <img class="menu_icon" src="img/menu-alt-64.png"/>
+            </div>
+            <div class="title">
+            <span>USCLife</span>
+            </div>
+        </div>
+     <div data-role="page">
+
+    <div data-role="header">
+    <a href="home.html" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>PROFILE
+        </h1>
+    <a href="~/home.html" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left">Back</a>
+  </div>
+
+   <div data-role="main" class="ui-content" align="center">
+    <p> 
+        
+        
+          <ul data-role="listview">
+       <li>
+        <a href="#music">
+                 <img src="images/music.png">
+                 <p>Hello, Name 
+                Please update your profile as per your choice
+            </p>
+                 </a></p>
+       </li>
+       </ul>
+  </div>
+
+
+         
+         
+  <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+      
+     
+  <div data-role="main" class="ui-content">
+    <div data-role="controlgroup" data-type="horizontal">
+      
+      <a href="home.html" class="ui-btn">HOME</a> 
+      <a href="events.html" class="ui-btn">EVENTS</a>  
+      <a href="exit.html" class="ui-btn">EXIT</a>
+    </div><br>
+    </form>
+  </div>
+</div>
+  
+</body>
+</html>

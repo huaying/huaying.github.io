@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>Friends</title>
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" id="friend">
+        
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                 <ul style="display:none" class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-minus ui-btn-icon-notext"></span>
+                <ul class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event" style="color:white; background-color: #35D4D4;">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+        </div>    
+      
+      
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+            <div style="text-align:center">
+               <h3>My Friends</h3>
+            </div>
+         </div>
+      </div>
+
+      
+
+        <div data-role="main" class="ui-content friend_list">
+            <style>
+            .friend_list .ui-filterable div {
+                padding:0.5em auto;
+            }
+            .friend_list .ui-filterable{
+                position:relative;
+                top:0px;
+                background: transparent;
+            }
+         </style>
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="Search friends..." data-inset="true" class="create-1-event-list" style="margin:0px;">
+            </ul>
+            <style>
+                .friend_grid img{
+                    width:90%
+                }
+                .friend_grid {
+                    padding:1.6em;
+                    text-align:center;
+                }
+                .friend_grid>div{
+                    margin-top:-20px;
+                }
+                .friend_grid>div>div{
+                    background:transparent;
+                }
+                .friend_grid a label{
+                    font-weight:bold !important;
+                }
+                .friend_grid>div>div{
+                    padding:0.5em;
+                    padding-top:0;
+                    padding-bottom:0;
+                }
+                .friend_grid>div:nth-child(2n+1)>div:nth-child(2n+1),
+                .friend_grid>div:nth-child(2n)>div:nth-child(2n){
+                    background:transparent;
+                }
+                .friend_grid>div>div:hover,
+                .friend_grid>div:nth-child(2n+1)>div:hover:nth-child(2n+1),
+                .friend_grid>div:nth-child(2n)>div:hover:nth-child(2n){
+                    background:transparent;
+                    cursor:pointer;
+                }
+            </style>
+            <div class="friend_grid">
+                <div class="ui-grid-b" style="height:150px">
+                    
+                    <div class="ui-block-c" >
+                    <a href="akshayprofile.html">
+                        <img src="images/akshay_round.gif">
+                        <label>Akshay</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c" > 
+                    <a href="Alexaprofile.html" >
+                        <img src="images/alexa_round.gif">
+                        <label>Alexa</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c" >
+                    <a href="friend_detail.html">
+                        <img src="images/pro9.png">
+                        <label>Ariel</label>
+                    </a>
+                    </div>
+                </div>
+                <div class="ui-grid-b" style="height:150px">
+                    <div class="ui-block-c" >
+                    <a href="Bellaprofile.html">
+                        <img src="images/bella_round.gif">
+                        <label>Bella</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c">
+                    <a href="friend_detail.html">
+                        <img src="images/pro7.png">
+                        <label>Bruce</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c">
+                    <a href="DeanProfile.html">
+                        <img src="images/dean_round.gif">
+                        <label>Dean</label>
+                    </a>
+                    </div>
+                    
+                    
+                </div>
+                <div class="ui-grid-b" style="height:150px">
+                    <div class="ui-block-c">
+                    <a href="friend_detail.html">
+                        <img src="images/pro4.png" >
+                        <label>Jane</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c">
+                    <a href="friend_detail.html">
+                        <img src="images/pro8.png">
+                        <label>Mike</label>
+                    </a>
+                    </div>
+                    <div class="ui-block-c">
+                    <a href="Saloniprofile.html">
+                        <img src="images/saloni_round.gif" >
+                        <label>Saloni</label>
+                    </a>
+                    </div>
+                </div>
+            </div>   
+
+            <div data-role="popup" class="ui-corner-all" id="del">
+                <div style="padding:20px 20px 14px">
+                    <h3>Unfriend?</h3>
+                    <button class="ui-btn ui-icon-check ui-btn-icon-left ui-btn-inline">Check</button>
+                    <button class="ui-btn ui-icon-delete ui-btn-icon-left ui-btn-inline">Cancel</button>
+                </div>
+            </div>
+            <ul data-role="listview" data-inset="true" class="friend-list" style="display:none">
+                <li>
+                        <img src="images/dean.jpg">
+                        <h3>Name: Dean</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a href="#del" data-rel="popup" data-position-to="window" data-transition="pop" class="anchor">Delete</a>
+                            <a href="DeanProfile.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+                <li>
+                        <img src="images/bella.jpg">
+                        <h3>Name: Bella</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a class="anchor">Delete</a>
+                            <a id="f-detail" class="anchor">Detail</a>
+                             <a href="Bellaprofile.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+                <li>
+                        <img src="images/alexa.jpg">
+                        <h3>Name: Alexa</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a class="anchor">Delete</a>
+                            <a href="Alexaprofile.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+                <li>
+                        <img src="images/saloni.jpg">
+                        <h3>Name: Saloni</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a class="anchor">Delete</a>
+                            <a href="Saloniprofile.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+                <li>
+                        <img src="images/akshay.jpg">
+                        <h3>Name: Akshay</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a class="anchor">Delete</a>
+                            <a href="akshayprofile.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+                <li>
+                        <img src="images/jacob.png">
+                        <h3>Name: Jacob Jone</h3>
+                        <h3>Major: Computer Science</h3>
+                        <p class="friend-link">
+                            <a class="anchor">Delete</a>
+                            <a href="friend_detail.html" class="anchor">Detail</a>
+                        </p>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+<script src="js/menu-bar.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu-bar.css">
+    <link rel="stylesheet" href="css/category-bar.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>Profile</title>
+    
+    
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" id="profile">
+         <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <!--<li><a href="#"><img src="images/jacob.png"><span>Profile</span></a></li>-->
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="myevent.html" id="profile_event">My Events</a></li>
+            <li><a href="#recomemdedevents.html" id="profile_event">Recommended</a></li>
+            <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+            <li><a href="event_history.html" id="profile_event">History</a></li>
+            <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+            <li><a href="friend.html">Friends</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+      </div>
+      
+      <!--Home, Event, Create Events, My Events, Upcoming Events, Event History, Recommended Events
+         Friends, Logout, Sign in, About Us, Feedback
+      -->
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+            <div style="text-align:center">
+               <h3 style="">Profile</h3>
+            </div>
+            <a class="thumb-box ui-corner-all" href=""><img class="thumb search-btn" src="images/search.png" style="z-index: 10; display:none;"/></a>
+            <div class="change-category" style="display:none"><img src="images/all.png"></div>
+         </div>
+      </div>
+      
+      <div class="category-bar">
+         <ol>
+            <li><a href="index.html"><img href="index.html" src="images/all.png"></a></li>
+            <li><a href="event_academic.html"><img  src="images/academic.png"></a></li>
+            <li><a href="event_sports.html"><img  src="images/sports.png"></a></li>
+            <li><a href="event_dinning.html"><img  src="images/dining.png"></a></li>
+            <li><a href="event_fun.html"><img src="images/fun.png"></a></li>
+            <li><a href="event_shopping.html"><img src="images/shopping.png"></a></li>
+         </ol>
+      </div>
+      
+
+        <div data-role="main" class="ui-content profile" >
+            <div class="p-info"> 
+                <a href="edit_profile.html" class="ui-btn ui-btn-inline btn-edit" style="top: 50px">Edit</a>
+                <img class="pull-left" src="images/jacob.png">
+                <h3>Jacob Jone</h3>
+                <p class="pull-left">Year: Senior<br>Major: Computer Science</p>
+            </div>
+            <div class="clearfix"></div>
+
+
+            <div class="p-info-b">
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Contact:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+
+                    <div class="ui-block-a"><span>607-319-6660</span></div>
+                   
+                </div>
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Email:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+
+                    <div class="ui-block-a"><span>abc@usc.edu</span></div>
+                    
+                </div>
+
+                <div class="p-detail">
+                    <h4>Details:</h4>
+                    <p>
+                         I love playing basketball!
+                    </p>
+                </div>
+            </div>
+        </div>
+    <script src="js/menu-bar.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

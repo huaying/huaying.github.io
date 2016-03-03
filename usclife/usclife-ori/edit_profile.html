@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>USCLife</title>
+
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a" id="edit_profile">
+        <script src="./js/make-hearder.js"></script>
+
+        <div data-role="main" class="ui-content profile" >
+            <div class="p-info edit"> 
+                <a  class="ui-btn ui-btn-inline btn-uploadimg">Update</a>
+                <img src="images/jacob.png">
+            </div>
+            <div class="p-info-b">
+
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Name:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+                        <input type="text" name="fname" value="Jacob Jone">
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:60px"><strong>Year:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <select>
+                            <option selected="selected">Sophomore</option>
+                            <option>Junior</option>
+                            <option>Senior</option>
+                            <option>Graduate</option>
+                        </select>
+                    </div>
+                </div>
+
+               <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <label style="line-height:60px"><strong>Major:</strong></label>
+                    </div>
+                    <div class="ui-block-b">
+                        <select>
+                            <option selected="selected">Computer Science</option>
+                            <option>Electrical Engineering </option>
+                            <option>Chemical Engineering</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Contact:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+
+                    <div class="ui-block-a"><input type="text" name="fname" value="607-319-6660"></div>
+                    <div class="ui-block-b">
+                        <label class="check"><input type="checkbox" data-mini=true />Make public</label>
+                    </div>
+                </div>
+                <div class="ui-grid-a ui-response">
+                    <div class="ui-block-a"><h4>Email:</h4></div>
+                </div>
+                <div class="ui-grid-a ui-response">
+
+                    <div class="ui-block-a"><input type="text" name="fname" value="abc@usc.edu"></div>
+                    <div class="ui-block-b">
+                        <label class="check"><input type="checkbox" data-mini=true />Make public</label>
+                    </div>
+                </div>
+
+                <div class="p-detail">
+                    <h4>Details:</h4>
+                    <textarea> I love playing basketball!</textarea>
+                </div>
+
+                <a href="#friendClosure" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow  ui-icon-check ui-btn-icon-left ">Done</a>
+                <div data-role="popup" id="friendClosure" data-overlay-theme="a" data-theme="a" data-dismissible="false" >
+                    <div role="main" class="ui-content" style="padding:1em 2em;">
+                        <h3 style="padding-bottom:1em">
+                            Now your profile looks perfect! Thanks for keeping us posted.
+                        </h3>
+                        <a href="profile.html" class="ui-btn ui-corner-all ui-shadow  ui-icon-check ui-btn-icon-left">OK</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

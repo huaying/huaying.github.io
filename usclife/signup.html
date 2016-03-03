@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+    <title>Sign Up</title>
+
+
+</head>
+<body>
+        <div data-role="page" class="ui-page-theme-a">
+        
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span class="menu-expand-btn ui-icon-plus ui-btn-icon-notext" style="width:3px; height: 3px;"></span>
+                 <ul style="display:none" class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <ul style="display:none" class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in" style="color:white; background-color: #35D4D4;">Log In</a></li>
+         </ul>
+        </div> 
+      
+      
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px; z-index: 10;"></a>
+            <div style="text-align:center">
+               <h3>Sign Up</h3>
+            </div>
+            <a class="thumb-box ui-corner-all" href=""><img class="thumb search-btn" src="images/search.png" style="z-index: 10; display:none;"/></a>
+         </div>
+      </div>
+
+        <div data-role="main" class="ui-content c_event2" style="width: 80%">
+            <h3>Welcome join USCLife</h3>
+            <form method="post" action="demoform.asp">
+                <input type="text" name="fname" id="Ename" placeholder="Username">
+                <input type="text" name="fname" id="Ename" placeholder="email">
+                   <input type="text" name="fname" id="Ename" placeholder="password">
+
+                <a href="signup_success.html" class="ui-btn login-btn">Sign up</a>
+     
+            </form>
+        </div>
+
+
+        </div>
+
+        <script src="js/menu-bar.js"></script>
+       
+    </body>
+    </html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    
+
+    <title>Home</title>
+
+</head>
+<body>
+    <div data-role="page" class="ui-page-theme-a main-page no_login" id="event-dining">
+        <script src="./css/ion.rangeSlider-2.0.1/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+        <script src="./css/ion.rangeSlider-2.0.1/js/moment.min.js"></script>
+        
+        <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home" style="color:white; background-color: #35D4D4;">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#" class="menu-event-link">Events</a>
+                 <span id="menu-event-expand-btn" class="menu-expand-btn ui-icon-minus ui-btn-icon-notext"></span>
+                 <ul class="menu-event-expand">
+                     <li><a href="myevent.html" id="profile_event">My Events</a></li>
+                     <li><a href="recomemdedevents.html" id="profile_event">Recommended</a></li>
+                     <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+                     <li><a href="event_history.html" id="profile_event">History</a></li>
+                     <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+                 </ul>
+            </li>
+            <li><a href="#" class="menu-friend-link">Friends</a>
+                <span id="menu-friend-expand-btn" class="menu-expand-btn ui-icon-plus ui-btn-icon-notext"></span>
+                <ul style="display:none" class="menu-friend-expand">
+                     <li><a href="friend.html" id="profile_event">My Friends</a></li>
+                     <li><a href="addfriends.html" id="profile_event">Add Friends</a></li>
+                 </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+        </div>  
+
+
+        <div class="header-container">
+           <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+              <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px;"></a>
+              <div style="text-align:center">
+                 <h3 style="">Home</h3>
+              </div>
+              <a href="#" class="search-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-search ui-btn-icon-notext" style="margin-top:5px;"></a>
+           </div>
+        </div>
+      
+        <div class="category-bar">
+           <ol>
+              <li><a href="index.html"><img href="index.html" src="images/all2.png"></a></li>
+              <li><a href="event_academic.html"><img  src="images/academic2.png"></a></li>
+              <li><a href="event_sports.html"><img src="images/sports2.png"></a></li>
+              <li><a href="event_dinning.html"><img style="border: 2px solid yellow;" src="images/dining2.png"></a></li>
+              <li><a href="event_fun.html"><img src="images/fun2.png"></a></li>
+              <li><a href="event_shopping.html"><img src="images/shopping2.png"></a></li>
+           </ol>
+        </div>
+ 
+        <div href="#"class="expand-advanced-btn ui-icon-carat-d ui-btn-icon-notext"></div>
+        
+        
+        
+       <!-- Date slider -->
+        <div class="date-slider slider-box">
+            <span class="slide-box-span">Date: </span>
+            <div class="slider-resize">
+                <input data-role="none" type="text" id="date-range" name="date-range" value="" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#date-range").ionRangeSlider({
+                type: "dobule",
+                hide_min_max: true,
+                hide_from_to: false,
+                min: +moment().format("X"),
+                max: +moment().add(6, "months").format("X"),
+                from: +moment().format("X"),
+                to: +moment().add(6, "months").format("X"),
+                prettify: function (num) {
+                    return moment(num, "X").format("LL");
+                }
+            });
+        </script>
+        
+        <!-- Time range -->
+        <div class="time-slider slider-box">
+            <span class="slide-box-span">Time: </span>
+            <div class="slider-resize">
+                <input data-role="none" type="text" id="time-range" name="time-range" value="" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#time-range").ionRangeSlider({
+                type: "double",
+                grid: false,
+                from: 0,
+                hide_min_max: true,
+                hide_from_to: false,
+                values: [
+                    "12am", "1am", "2am", "3am", "4am", "5am", "6am", "7am", "8am", "9am", "10am", "11am",
+                    "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm", "10pm", "11pm"
+                ]
+            });
+        </script>
+
+        <div style="clear:both"></div>
+
+        
+        <div data-role="main" class="ui-content eventlist">
+            
+         
+         <div style="clear:both"></div>
+         
+         <ul data-role="listview" data-filter="true" data-inset="true" class="create-1-event-list" style="margin:0px; overflow: scroll">
+               
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name"> Umami Burger</div>
+                            <div class="event-loc">Downtown Umami</div>
+                            <div class="event-date">Dec 4, 2015 &nbsp; 7:00pm - 10:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Dining with Trojans</div>
+                            <div class="event-loc">VKC 201</div>
+                            <div class="event-date">Dec 5, 2015 &nbsp; 6:00pm - 8:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Cup O' Joy Snacks</div>
+                            <div class="event-loc"> Cup O' joy</div>
+                            <div class="event-date">Dec 13, 2015 &nbsp; 8:00pm - 8:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Tsujita Ramen</div>
+                            <div class="event-loc">Little Tokyo</div>
+                            <div class="event-date">Dec 16, 2015 &nbsp; 6:30pm - 9:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Pizza Studio</div>
+                            <div class="event-loc">Pizza Studio</div>
+                            <div class="event-date">Dec 18, 2015 &nbsp; 5:00pm - 7:00pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+
+         </ul>
+        </div>
+    <script src="js/menu-bar.js"></script>
+    </div>  
+</body>
+</html>

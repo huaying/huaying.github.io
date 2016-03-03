@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu-bar.css">
+    <link rel="stylesheet" href="css/category-bar.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <title>Upcoming Event</title>
+    
+    
+
+    
+</head>
+<body>
+   <div data-role="page" class="ui-page-theme-a" id="upcoming_event" >
+      
+      <div class="menu-bar">
+         <ul>
+            <li><a href="index.html" id="home">Home</a></li>
+            <!--<li><a href="#"><img src="images/jacob.png"><span>Profile</span></a></li>-->
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="myevent.html" id="profile_event">My Events</a></li>
+            <li><a href="#recomemdedevents.html" id="profile_event">Recommended</a></li>
+            <li><a href="upcoming_event.html" id="profile_event">Upcoming</a></li>
+            <li><a href="event_history.html" id="profile_event">History</a></li>
+            <li><a href="createevent.html" id="profile_event">Create Event</a></li>
+            <li><a href="friend.html">Friends</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="signin.html" id="log-in">Log In</a></li>
+         </ul>
+      </div>
+      
+      <!--Home, Event, Create Events, My Events, Upcoming Events, Event History, Recommended Events
+         Friends, Logout, Sign in, About Us, Feedback
+      -->
+
+      <div class="header-container">
+         <div data-role="header" class="header" style="background-color:#424242; color:#fff; border: 0; padding: 13px;">
+            <a href="#menu" class="menu-btn ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-btn-inline ui-icon-carat-l ui-btn-icon-notext" style="margin-top:5px;"></a>
+            <div style="text-align:center">
+               <h3 style="">Upcoming Events</h3>
+            </div>
+            <a class="thumb-box ui-corner-all" href=""><img class="thumb search-btn" src="images/search.png"/></a>
+            <div class="change-category" style="display:none"><img src="images/all.png"></div>
+         </div>
+      </div>
+      
+      
+      <div class="category-bar">
+         <ol>
+            <li><a href="index.html"><img href="index.html" src="images/all.png"></a></li>
+            <li><a href="event_academic.html"><img  src="images/academic.png"></a></li>
+            <li><a href="event_sports.html"><img  src="images/sports.png"></a></li>
+            <li><a href="event_dinning.html"><img  src="images/dining.png"></a></li>
+            <li><a href="event_fun.html"><img src="images/fun.png"></a></li>
+            <li><a href="event_shopping.html"><img src="images/shopping.png"></a></li>
+         </ol>
+      </div>
+      
+      
+
+      <div data-role="main" class="ui-content eventlist">
+
+         <ul id="event-list" style="text-align: center" data-role="listview" data-filter="true" data-inset="true" class="create-1-event-list">
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/fun.png"">
+                        <div class="pull-left">
+                            <div class="event-name">Wicked Musical</div>
+                            <div class="event-loc">Bovard Auditorium</div>
+                            <div class="event-date">Jan 13, 2015 &nbsp; 6:00pm - 9:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png">
+                        <div class="pull-left">
+                            <div class="event-name">Lakers vs Bulls</div>
+                            <div class="event-loc">Staples Center</div>
+                            <div class="event-date">Jan 13, 2015 &nbsp; 7:00pm - 10:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/dining.png">
+                        <div class="pull-left">
+                            <div class="event-name">Dining with Trojans</div>
+                            <div class="event-loc">VKC 201</div>
+                            <div class="event-date">Jan 14, 2015 &nbsp; 6:00pm - 8:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/academic.png">
+                        <div class="pull-left">
+                            <div class="event-name">588 Study Session</div>
+                            <div class="event-loc">RTCC Trojan Lounge</div>
+                            <div class="event-date">Jan 14, 2015 &nbsp; 6:00pm - 8:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/fun.png">
+                        <div class="pull-left">
+                            <div class="event-name">Taylor Swift Concert</div>
+                            <div class="event-loc">L.A. Live</div>
+                            <div class="event-date">Jan 14, 2015 &nbsp; 6:30pm - 9:30pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="eventdetail.html" style="padding-left:0px">
+                        <h3 class="event-header">
+                        <img class="pull-left" style= "width: 50px; height: 50px" src="images/sports.png">
+                        <div class="pull-left">
+                            <div class="event-name">Basketball Match</div>
+                            <div class="event-loc">Lyon Center</div>
+                            <div class="event-date">Jan 16, 2015 &nbsp; 5:00pm - 7:00pm</div>
+                        </div>
+                    </h3>
+                    </a>
+                </li>
+
+         </ul>
+        </div>
+   </div>
+     
+   <script src="js/menu-bar.js"></script>   
+   </body>
+   
+</html>

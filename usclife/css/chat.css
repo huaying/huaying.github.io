@@ -1,0 +1,50 @@
+.chat-box img {
+    width: 50px;
+    height: 50px;
+    margin: 10px; 
+}
+
+.chat-box div {
+    border: 1px solid #e3e3e3;
+    width: 63%;
+    font-size: 10pt;
+    background-color: #fff;
+    padding:10px;
+    margin:5px 0;
+}
+
+.chat-box div span{
+    font-size: 8pt;
+    color: gray;
+}
+
+.chat-box-left img {
+    float:left;
+   
+}
+
+.chat-box-left div {
+    float:left;
+}
+
+.chat-box-right img {
+    float:right;
+}
+
+.chat-box-right div {
+    float:right;
+}
+
+.input-chat {
+    position: fixed;
+    bottom: -40px;
+}
+
+.input-chat input {
+    margin-bottom:0;
+}
+
+.input-chat a {
+    float:left;
+}
+
